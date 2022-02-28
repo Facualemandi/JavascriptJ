@@ -400,7 +400,7 @@ a{
 
 .ul_nav li:hover{ 
     background-color: rgb(226, 226, 226);
-    border-radius: 5px;
+    border-radius : 30px ;
     transition: 0.5s ;
     padding: 0.5vh;
     color: black;
@@ -526,7 +526,7 @@ a{
 
     ul.ul_nav.is-active li:active{
         background: linear-gradient(rgba(248, 194, 57, 0.5), rgba(248, 194, 57, 0.5));
-    }
+     }
 
     .ul_nav.esconderNav{
         transform: translate(0px, -120%);
@@ -714,6 +714,8 @@ margin: 1vh;
 background-color: gray;
 }
 
+a{
+    z-index: 1100;
 }
 
-
+}
