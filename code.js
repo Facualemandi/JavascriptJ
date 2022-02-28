@@ -58,6 +58,8 @@ function openMenu(open,inner,box,li, start,email){
             error.style.display = "block"
             verificar.style.display = "none"
            },1500 )
+           e.preventDefault()
+           
         }
     })
 }
