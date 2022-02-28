@@ -44,7 +44,7 @@
             },1500 )
  
          }if(e.target.matches(email) && expresiones.correo.test(validar.value) ){
- 
+           e.preventDefault()
              verificar.style.display = "block"
              error.style.display = "none"
              send.style.display = "none"
