@@ -12,7 +12,7 @@
  
  const d = document;
  d.addEventListener('DOMContentLoaded', (e)=>{
-    openMenu('.hamburger', '.hamburger-inner', '.hamburger-box', '#li', '#start','#email')
+    openMenu('.hamburger', '.hamburger-inner', '.hamburger-box', '#li','#liOne','#liTwo', '#start','#email')
  })
  
  const nav = document.getElementById('nav');
@@ -23,7 +23,7 @@
  const verificar = document.getElementById('verificar')
  
  
- function openMenu(open,inner,box,li, start,email){
+ function openMenu(open,inner,box,li,liOne, start,email){
   const d = document;
      d.addEventListener('click', (e) =>{
        
@@ -37,7 +37,15 @@
               nav.classList.toggle('esconderNav');
               nav.classList.remove('is-active');
         
-         }if(e.target.matches(start)){
+         }if(e.target.matches(liOne)){
+              nav.classList.toggle('esconderNav');
+              nav.classList.remove('is-active');
+
+         } if(e.target.matches(liTwo)){
+          nav.classList.toggle('esconderNav');
+          nav.classList.remove('is-active');
+
+         } if(e.target.matches(start)){
               segurity.style.display = "block"
             setTimeout(()=>{
              segurity.style.display = "none"
