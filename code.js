@@ -38,6 +38,7 @@
               nav.classList.remove('is-active');
         
          }if(e.target.matches(start)){
+           e.preventDefault()
               segurity.style.display = "block"
             setTimeout(()=>{
              segurity.style.display = "none"
