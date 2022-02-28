@@ -59,6 +59,7 @@
  
               
          }if(e.target.matches(email) && validar.value === "" ){
+          e.preventDefault()
             verificar.style.display = "block"
             send.style.display = "none"
             error.style.display = "none"
