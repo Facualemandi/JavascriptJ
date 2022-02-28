@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Lato:wght@900&family=Outfit:wght@300&family=Piazzolla:wght@100;200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Welcome</title>
 </head>
 <body>
+    
 
     <header class="header">
 
@@ -25,7 +27,7 @@
               <div class="buttom-hamburger" id="open">  
                 <button class="hamburger hamburger--collapse " type="button">
                     <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
+                      <span class="hamburger-inner"> </span>
                     </span>
                   </button>
                 </div>
@@ -35,11 +37,13 @@
 
                 <ul class="ul_nav" id="nav">
                  
-                    <li> Features </li>
-                    <li> Team </li>
-                    <li> Sign in </li>
+                <a href="#perfiles"> <li id="li"> Perfiles </li> </a>    
+                <a href="#info"> <li id="li"> Info </li> </a>
+                <a href="#productividad"> <li id="li"> Productividad </li> </a>
                
                 </ul>
+
+    
 
              </nav>
     </header>
@@ -59,12 +63,14 @@
                          you need, share and collaborate with friends family, and co-workers.</p>
                 </div>
 
-                 <input class="started" type="submit" value="Get Started">
+               <button class="started" id="start"> Get Started </button>
+               <span class="segurity" id="segurity"> Archivos guardados de una forma segura (<i class="fa-solid fa-check">)</i> </span>
+    
 
         </section>
 
 
-<section class="section_two">
+<section class="section_two" id="info">
 
  <div class="div_one_two">  
 
@@ -123,7 +129,7 @@
 </section>
 
 
-        <section class="section_three">
+        <section class="section_three" id="productividad">
 
             <picture>
                 <img class="ilustration" src="./Componentes/images/illustration-stay-productive.png" alt="">
@@ -154,7 +160,7 @@
 
 
 
-        <section class="section_four">
+        <section class="section_four"  id="perfiles">
 
 
  
@@ -237,7 +243,14 @@
 
                         <form class="form_email" action="">
                             <input class="email" type="email" name="" id="" placeholder="Email adress">
-                            <button class="submit" type="submit">Get Started For Free</button>
+                            <button class="submit" id="email" type="submit">Send E-mail</button>
+
+                        <div class="div_email">
+                                 <span class="emailEnviado" id="send">Email enviado con exito (<i class="fa-solid fa-check">)</i> </span>
+                                 <span class="verificar" id="verificar">Verificando... Por favor espere</span>
+                                  <span class="emailError" id="error"> El email que intentas introducir no es valido <i class="fa-solid fa-triangle-exclamation"></i> </span>
+                            </div>
+
                        </form>
 
 
@@ -300,9 +313,9 @@
 
 
         <div class="links">
-            <a href="#"> <i class="fa-brands fa-facebook-square"></i></a>   
-            <a href="#"> <i class="fa-brands fa-twitter-square"></i></a>  
-            <a href="#"> <i class="fa-brands fa-instagram-square"></i></a>  
+            <a href="https://www.facebook.com/FacundoAlemandi" target="_blank" > <i class="fa-brands fa-facebook-square"> </i> </a>   
+            <a href="https://twitter.com/AlemandiFacundo" target="_blank"> <i class="fa-brands fa-twitter-square"></i></a>  
+            <a href="https://www.instagram.com/facu_alemandi/" target="_blank"> <i class="fa-brands fa-instagram-square"></i></a>  
         </div>
 
 
