@@ -449,7 +449,7 @@ a{
     margin-top: 1vh;
     padding: 0.6vh;
     border-radius: 15px;
-    width: 90%;
+    width: 60%;
     font-family: sans-serif;
     font-size: 15px;
     display: none;
@@ -460,12 +460,10 @@ a{
     margin-top: 1vh;
     font-family: sans-serif;
     border: 1px solid gray;
-    border-radius: 8px;
+    border-radius: 30px;
     background-color: gray;
     color: black;
-     padding: 1vh;
-
-
+    padding: 1vh;
 }
 
 

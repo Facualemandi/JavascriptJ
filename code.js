@@ -43,23 +43,37 @@ function openMenu(open,inner,box,li, start,email){
            },1500 )
 
         }if(e.target.matches(email) && expresiones.correo.test(validar.value) ){
+
             verificar.style.display = "block"
+            error.style.display = "none"
             send.style.display = "none"
-            setInterval(()=>{
+          const ver =   setInterval(()=>{
               send.style.display = "block"
               verificar.style.display = "none"
+
+             clearInterval(ver)
+
              },1500 )
+          
 
-
-              e.preventDefault()
+             
         }if(e.target.matches(email) && validar.value === "" ){
            verificar.style.display = "block"
-          setTimeout(()=>{
-            error.style.display = "block"
-            verificar.style.display = "none"
+           send.style.display = "none"
+           error.style.display = "none"
+        const err = setTimeout(()=>{
+          verificar.style.display = "none"
+          error.style.display = "block"
+          send.style.display = "none"
+           
+            clearInterval(err)
+
            },1500 )
-           e.preventDefault()
+           
            
         }
+        e.preventDefault()
     })
 }
+
+// asdkljdsaljkn@gmail.com
