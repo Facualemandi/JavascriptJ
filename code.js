@@ -12,7 +12,7 @@
  
  const d = document;
  d.addEventListener('DOMContentLoaded', (e)=>{
-    openMenu('.hamburger', '.hamburger-inner', '.hamburger-box', '#li','#liOne','liTwo', '#start','#email')
+    openMenu('.hamburger', '.hamburger-inner', '.hamburger-box', '#li','#liOne','#liTwo', '#start','#email')
  })
  
  const nav = document.getElementById('nav');
