@@ -12,7 +12,7 @@
  
  const d = document;
  d.addEventListener('DOMContentLoaded', (e)=>{
-    openMenu('.hamburger', '.hamburger-inner', '.hamburger-box', '#li','#liOne','#liTwo', '#start','#email')
+    openMenu('.hamburger', '.hamburger-inner', '.hamburger-box', '#li','#liOne','liTwo', '#start','#email')
  })
  
  const nav = document.getElementById('nav');
@@ -23,7 +23,7 @@
  const verificar = document.getElementById('verificar')
  
  
- function openMenu(open,inner,box,li,liOne, start,email){
+ function openMenu(open,inner,box,li,liOne,liTwo, start,email){
   const d = document;
      d.addEventListener('click', (e) =>{
        
@@ -38,21 +38,22 @@
               nav.classList.remove('is-active');
         
          }if(e.target.matches(liOne)){
-              nav.classList.toggle('esconderNav');
-              nav.classList.remove('is-active');
-
-         } if(e.target.matches(liTwo)){
           nav.classList.toggle('esconderNav');
           nav.classList.remove('is-active');
-
-         } if(e.target.matches(start)){
+    
+         }if(e.target.matches(liTwo)){
+          nav.classList.toggle('esconderNav');
+          nav.classList.remove('is-active');
+    
+         }if(e.target.matches(start)){
+           e.preventDefault()
               segurity.style.display = "block"
             setTimeout(()=>{
              segurity.style.display = "none"
             },1500 )
  
          }if(e.target.matches(email) && expresiones.correo.test(validar.value) ){
-           e.preventDefault()
+          e.preventDefault()
              verificar.style.display = "block"
              error.style.display = "none"
              send.style.display = "none"
@@ -87,9 +88,7 @@
  }
  
 
-
-
-// Facundo Alemandi.
+// HOla
 
 
 // asdkljdsaljkn@gmail.com
